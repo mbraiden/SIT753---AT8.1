@@ -24,6 +24,11 @@ pipeline{
                 echo "Code Analysis"
             }
         }
+        stage('Security Scan'){
+            steps{
+                echo "Security Scan"
+            }
+        }
         stage('Deploy to Staging'){
             steps{
                 echo "Deploy"
